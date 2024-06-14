@@ -16,12 +16,6 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig)
 
-// initializeApp({
-//   credential: applicationDefault(),
-//   projectId: "sonbola-main",
-//   databaseURL: "https://sonbola-main-default-rtdb.firebaseio.com",
-// });
-
 const sendMultiplePushNotification = async (user_id, message) => {
   try{
     console.log(`User id: ${user_id}`);
@@ -70,4 +64,3 @@ module.exports = {
   sendMultiplePushNotification,
   sendPushNotification,
 };
-// $env:GOOGLE_APPLICATION_CREDENTIALS="E:\Rebel Force Tech Solutions\Sonbola MVM\Sonbola-Backend\sonbola-main-firebase-adminsdk-yhc7g-9dcc6cecf6.json"
